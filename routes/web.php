@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Product;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BrandController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +24,8 @@ Route::get('/test', function () {
     return view('test');
 });
 Route::get('/product/form', [ ProductController::class,'showForm'])->name('product.form');
+Route::get('/brand/list', [ BrandController::class,'showList'])->name('brand.list');
+Route::get('/brand/form', [ BrandController::class,'showForm'])->name('brand.form');
 
 
 

@@ -153,6 +153,10 @@
             
   <!-- Main content -->
   
+
+@yield('page')
+
+
   <!-- /.content -->
 </div>
 
